@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;1,600&display=swap');
+
+@font-face {
+  font-family: "Bluescreens";
+  src: url('./assets/TT Bluescreens Trial Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "headingnow";
+  src: url('./assets/HeadingNowTrial-66Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#mainDivContainer {
+  padding-left: 50px;
+}
+
+#mainPageDiv {
+  background-image: url('/src/assets/project-title.png');
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+#mainPageTitle {
+  font-family: Bluescreens;
+  font-size: 10rem;
+  color: #C2C0CB;
+  padding-top: 50px;
+  margin-left: 120px;
+  letter-spacing: -5px;
+  text-shadow: #487196 5px 5px 10px;
+}
+
+#mainPageSubTitle {
+  font-family: headingnow;
+  font-size: 3.2rem;
+  color: #abaab3;
+  margin-left: 130px;
+  position: relative;
+  top: -45px;
+}
+
+#mainPagePhrase {
+  font-family: Poppins;
+  font-size: 1.9rem;
+  color: #4d4b4a;
+  margin-left: 105px;
+  position: relative;
+  top: -30px;
+  line-height: 40px;
+  text-shadow: #ffffff 5px 5px 50px;
+}
+
+#mainPageBtn {
+  font-family: Poppins;
+  background-color: #C2C0CB;
+  border-radius: 30px;
+  color: #4d4b4a;
+  padding: 10px 40px;
+  font-size: 1.2rem;
+  margin-left: 130px;
+  margin-top: 10px;
+  border: #4d4b4a;
+  cursor: pointer;
+  
+  &:hover {
+    background-color: #b8b6c0;
+  }
+  
+  &:active {
+    box-shadow: #4d4b4a 1px 1px 0;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+}
