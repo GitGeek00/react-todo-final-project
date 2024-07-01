@@ -1,0 +1,47 @@
+.listItem:not(:nth-child(1)) {
+    list-style: none;
+    font-size: 1.5rem;
+    font-family: Poppins;
+    color: #C2C0CB;
+    margin: 0;
+
+    &:hover {
+        background-color: #abaaaf;
+        color: black;
+        cursor: pointer;
+    }
+
+    & svg:nth-child(1):hover path {
+        stroke: #c04838;
+
+    }
+
+    & svg:nth-child(2):hover path {
+        fill: #1d05f1;
+    }
+
+}
+
+.listItem:nth-child(1) {
+    list-style: none;
+    font-size: 1.7rem;
+    letter-spacing: 2px;
+    font-family: headingnow;
+    color: #C2C0CB;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    margin: 0;
+
+    & svg:nth-child(1):hover path {
+        fill: rgb(192, 191, 204);
+    }
+
+    & svg:nth-child(1):hover {
+        cursor: pointer;
+    }
+
+}
+
+.listItem:last-child {
+    border-bottom: 1px solid;
+}
