@@ -28,10 +28,19 @@
   }
 }
 
+.mobileMenu {
+  display: none;
+
+  @media (max-width: 576px) {
+    display: block;
+  }
+}
+
 .topnav {
   font-family: 'headingnow';
   overflow: hidden;
-  background-color: #4d4b4a;
+  /* background-color: #4674d1b2; */
+  box-shadow: 1px 1px 100px #8ba4d4;
   position: relative;
 }
 
