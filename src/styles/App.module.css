@@ -1,0 +1,111 @@
+.mainPageDiv {
+  background-image: url('/src/assets/project-title.png');
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100%;
+
+  @media (max-width: 576px) {
+    background-image: url('');
+    background-size: unset;
+    background-position: unset;
+  }
+}
+
+.mainDivSubContainer {
+  padding-left: 50px;
+
+  @media (max-width: 576px) {
+    padding-left: 0;
+  }
+}
+
+.mainPageTitle {
+  font-family: 'Bluescreens';
+  font-size: 13rem;
+  color: #C2C0CB;
+  padding-top: 90px;
+  margin-left: 120px;
+  letter-spacing: -5px;
+  text-shadow: #487196 5px 5px 10px;
+  
+  @media (max-width: 576px) {
+    font-size: 8rem;
+    padding-top: 100px;
+    margin: auto;
+    text-align: center;
+  }
+}
+
+.mainPageSubTitle {
+  font-family: headingnow;
+  font-size: 4.3rem;
+  color: #4d4b4a;
+  margin-left: 130px;
+  position: relative;
+  top: -45px;
+
+  @media (max-width: 576px) {
+    font-size: 2.6rem;
+    margin-left: 10px;
+    position: relative;
+    top: -35px;
+    text-align: center;
+  }
+}
+
+.mainPagePhrase {
+  font-family: Poppins;
+  font-size: 1.9rem;
+  color: #4d4b4a;
+  margin-left: 128px;
+  position: relative;
+  top: -50px;
+  line-height: 40px;
+  text-shadow: #ffffff 5px 5px 50px;
+
+  @media (max-width: 576px) {
+    font-size: 1.5rem;
+    position: relative;
+    margin-left: 0;
+    top: -30px;
+    line-height: 30px;
+    text-shadow: #ffffff 5px 5px 50px;
+    text-align: center;
+  }
+}
+
+.btnDiv {
+  text-align: unset;
+
+  @media (max-width: 576px) {
+    text-align: center;
+  }
+}
+
+.mainPageBtn {
+  font-family: Poppins;
+  background-color: #C2C0CB;
+  border-radius: 10px;
+  color: #4d4b4a;
+  padding: 10px 70px;
+  font-size: 1.2rem;
+  margin-left: 128px;
+  border: #4d4b4a;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #b8b6c0;
+  }
+
+  &:active {
+    box-shadow: #4d4b4a 1px 1px 0;
+  }
+
+  @media (max-width: 576px) {
+    padding: 10px 70px;
+    font-size: 1.2rem;
+    margin-left: 0;
+    margin-top: 100px;
+  }
+}
